@@ -8,6 +8,15 @@
     });
   }
 
+  var nav = document.querySelector(".site-nav");
+  if (nav && !document.querySelector(".page-hero")) {
+    var paintNav = function () {
+      nav.classList.toggle("is-solid", window.scrollY > 24);
+    };
+    paintNav();
+    window.addEventListener("scroll", paintNav, { passive: true });
+  }
+
   var form = document.querySelector("#contact-form");
   if (!form) return;
   form.addEventListener("submit", function (event) {

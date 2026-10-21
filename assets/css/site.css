@@ -30,7 +30,11 @@ img, video { max-width: 100%; display: block; }
   justify-content: space-between;
   padding: 22px 36px;
 }
-body:has(.page-hero) .site-nav { background: #fff; }
+body:has(.page-hero) .site-nav,
+.site-nav.is-solid {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+}
 .logo img { width: 54px; height: 54px; object-fit: contain; }
 .nav-links { display: flex; align-items: center; gap: 10px; }
 .nav-links a {
@@ -75,22 +79,24 @@ body:has(.page-hero) .site-nav { background: #fff; }
 }
 .hero-copy { position: relative; z-index: 1; padding: 0 24px; }
 .hero-mark { width: 168px; height: 168px; margin: 0 auto 18px; object-fit: contain; }
-.hero-kicker {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 500;
-  letter-spacing: -0.03em;
+.hero-category {
+  margin: 0 0 16px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 .hero h1 {
   margin: 0;
-  font-size: clamp(48px, 6vw, 84px);
+  font-size: clamp(40px, 5.4vw, 76px);
   font-weight: 600;
   letter-spacing: -0.04em;
-  line-height: 1;
+  line-height: 1.05;
 }
-.hero-date {
-  margin: 28px 0 0;
-  font-size: 28px;
+.hero-lead {
+  margin: 18px auto 0;
+  max-width: 22em;
+  font-size: clamp(18px, 2vw, 28px);
   font-weight: 500;
   letter-spacing: -0.03em;
 }
@@ -175,6 +181,14 @@ h2 {
 .work-card h3 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.03em; }
 .work-card p { margin: 0; color: #3d474f; }
 .work-card p + p { margin-top: 14px; }
+.work-focus { margin: 0 0 8px; color: var(--ink); font-weight: 600; }
+.work-status {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
 .pin {
   width: 18px;
   height: 18px;
