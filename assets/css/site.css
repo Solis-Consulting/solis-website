@@ -125,6 +125,29 @@ body:has(.page-hero) .site-nav,
   to { transform: translateX(-50%); }
 }
 
+.slogan-band {
+  overflow: hidden;
+  padding: 64px 0;
+}
+.slogan-track {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: max-content;
+  animation: drift 48s linear infinite;
+}
+.slogan-track p {
+  margin: 0;
+  font-size: clamp(32px, 4.5vw, 56px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slogan-track { animation: none; }
+}
+
 .section { padding: 96px 36px; max-width: 1180px; margin: 0 auto; }
 .eyebrow {
   margin: 0 0 12px;
