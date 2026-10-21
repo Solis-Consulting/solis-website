@@ -17,6 +17,26 @@
     window.addEventListener("scroll", paintNav, { passive: true });
   }
 
+  var slogan = document.querySelector("#hero-slogan");
+  if (slogan && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var lines = [
+      "We Are Solis Consulting",
+      "Relationships drive opportunity.",
+      "We build the infrastructure behind them.",
+      "One engine. Multiple applications.",
+      "An NCSSM alumni founding team."
+    ];
+    var line = 0;
+    window.setInterval(function () {
+      slogan.classList.add("is-out");
+      window.setTimeout(function () {
+        line = (line + 1) % lines.length;
+        slogan.textContent = lines[line];
+        slogan.classList.remove("is-out");
+      }, 600);
+    }, 3400);
+  }
+
   var form = document.querySelector("#contact-form");
   if (!form) return;
   form.addEventListener("submit", function (event) {
