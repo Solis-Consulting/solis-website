@@ -23,7 +23,7 @@
       "We Are Solis Consulting",
       "Relationships drive opportunity.",
       "We build the infrastructure behind them.",
-      "One engine. Multiple applications.",
+      "One engine. Built for athletics.",
       "An NCSSM alumni founding team."
     ];
     var line = 0;
