@@ -20,7 +20,7 @@
   var slogan = document.querySelector("#hero-slogan");
   if (slogan && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     var lines = [
-      "We Are Solis Consulting",
+      "We Are Solis Technologies",
       "Relationships drive opportunity.",
       "We build the infrastructure behind them.",
       "One engine. Built for athletics.",
@@ -52,6 +52,6 @@
       String(data.get("query") || "")
     ].join("\n");
     window.location.href = "mailto:contact@solisconsultinggroup.com?subject=" +
-      encodeURIComponent("Solis Consulting") + "&body=" + encodeURIComponent(body);
+      encodeURIComponent("Solis Technologies") + "&body=" + encodeURIComponent(body);
   });
 })();
