@@ -23,7 +23,7 @@
       "We Are Solis Technologies",
       "Relationships drive opportunity.",
       "We build the infrastructure behind them.",
-      "One engine. Built for athletics.",
+      "One platform. Built for athletics.",
       "An NCSSM alumni founding team."
     ];
     var line = 0;
